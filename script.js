@@ -1,13 +1,15 @@
 
 const container = document.querySelector('#container');
 const body = document.querySelector('body');
+const sizeBtn = document.querySelector('#setSizeBtn');
 const colorBtn = document.querySelector('#setColorBtn');
 const randColBtn = document.querySelector('#randomColorBtn');
 
 let clicked = false;
-let color = "#000";
+let color = "#FFF";
 
 function createGrid(gridSize) {
+    container.innerHTML = "";
     container.setAttribute('style', `grid-template-columns: repeat(${gridSize}, auto);`);
     let num = gridSize * gridSize;
     for (let i = 0; i < num; i++) {
