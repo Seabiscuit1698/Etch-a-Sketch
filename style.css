@@ -1,0 +1,36 @@
+
+html {
+    background-color: beige;
+}
+
+#container {
+    display: grid;
+    width: 800px;
+    height: 800px;
+    background-color: black;
+    margin: 10px auto;
+}
+
+.gridSquare:hover {
+    background-color: gray;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30vw;
+    margin-left: 35vw;
+}
+
+#setSizeBtn {
+    border-radius: 5px;
+}
+
+#setColorBtn {
+    border-radius: 5px;
+}
+
+#randomColorBtn {
+    border-radius: 5px;
+}
